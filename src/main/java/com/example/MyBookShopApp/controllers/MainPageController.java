@@ -20,9 +20,9 @@ public class MainPageController {
 
     @GetMapping("/main")
     public String mainPage(Model model) {
-        model.addAttribute("bookDataNew", bookService.getBooksDataNew());
-        model.addAttribute("bookDataPopular", bookService.getBooksDataPopular());
-        model.addAttribute("bookDataRecommended", bookService.getBooksDataRecommended());
+        model.addAttribute("bookDataNew", bookService.getBooksNew());
+        model.addAttribute("bookDataPopular", bookService.getBooksPopular());
+        model.addAttribute("bookDataRecommended", bookService.getBooksRecommended());
         return "index";
     }
 }

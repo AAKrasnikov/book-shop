@@ -21,7 +21,7 @@ public class AuthorPageController {
 
     @GetMapping("/authors")
     public String authorPage(Model model) {
-        model.addAttribute("authorData", authorService.getAuthorsData());
+        model.addAttribute("authorData", authorService.getAuthors());
         return "author";
     }
 }
