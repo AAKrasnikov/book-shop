@@ -1,6 +1,6 @@
 package com.example.MyBookShopApp.controllers;
 
-import com.example.MyBookShopApp.data.BookService;
+import com.example.MyBookShopApp.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,6 +23,7 @@ public class MainPageController {
         model.addAttribute("bookDataNew", bookService.getBooksNew());
         model.addAttribute("bookDataPopular", bookService.getBooksPopular());
         model.addAttribute("bookDataRecommended", bookService.getBooksRecommended());
+        model.addAttribute("searchPlaceholder", "new search placeholder");
         return "index";
     }
 }
