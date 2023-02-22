@@ -17,7 +17,7 @@ public class AuthorService {
         this.authorRepository = authorRepository;
     }
 
-    public Map<Object, List<Author>> getAuthors() {
+    public Map<String, List<Author>> getAuthorsMap() {
         return authorRepository.getAuthorsData();
     }
 }

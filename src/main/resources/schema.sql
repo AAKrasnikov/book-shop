@@ -8,7 +8,13 @@ CREATE TABLE  books(
     parameter_id INT
 );
 
-DROP TABLE IF EXISTS books_author;
+create table authors (
+    id INT,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50)
+);
+
+/*DROP TABLE IF EXISTS books_author;
 CREATE TABLE books_author(
     id INT AUTO_INCREMENT PRIMARY KEY,
     books_id INT,
@@ -30,4 +36,4 @@ CREATE TABLE parameter_books(
   popular VARCHAR(5),
   new VARCHAR(5),
   recommended VARCHAR(5)
-);
+);*/

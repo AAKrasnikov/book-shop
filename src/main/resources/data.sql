@@ -48,7 +48,7 @@ insert into books (author, title, priceOld, price, parameter_id)
 values ('Bette-ann Askem', 'e-enable dot-com supply-chains', '$297.83', '$110.15', 2);
 insert into books (author, title, priceOld, price, parameter_id)
 values ('Dom Robuchon', 'facilitate efficient eyeballs', '$232.30', '$131.48', 1);
-
+/*
 insert into books_author(books_id, author_id) values (1,1);
 insert into books_author(books_id, author_id) values (2,2);
 insert into books_author(books_id, author_id) values (3,3);
@@ -134,3 +134,4 @@ insert into parameter_books(popular, new, recommended) values ('X', 'X', '');
 insert into parameter_books(popular, new, recommended) values ('', 'X', 'X');
 insert into parameter_books(popular, new, recommended) values ('X', '', 'X');
 insert into parameter_books(popular, new, recommended) values ('X', 'X', 'X');
+*/

@@ -17,13 +17,13 @@ public class BookService {
         this.bookRepository = bookRepository;
     }
 
-    public List<Book> getBooksNew() {
+/*    public List<Book> getBooksNew() {
         return bookRepository.getBooksDataNew();
     }
 
     public List<Book> getBooksPopular() {
         return bookRepository.getBooksDataPopular();
-    }
+    }*/
 
     public List<Book> getBooksRecommended() {
         return bookRepository.getBooksDataRecommended();

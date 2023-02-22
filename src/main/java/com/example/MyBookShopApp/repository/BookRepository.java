@@ -18,7 +18,7 @@ public class BookRepository {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    public List<Book> getBooksDataNew() {
+/*    public List<Book> getBooksDataNew() {
         List<Book> books = jdbcTemplate.query(
                 "SELECT * FROM books " +
                         "JOIN parameter_books ON books.parameter_id = parameter_books.id" +
@@ -33,9 +33,9 @@ public class BookRepository {
                     return book;
                 });
         return new ArrayList<>(books);
-    }
+    }*/
 
-    public List<Book> getBooksDataPopular() {
+/*    public List<Book> getBooksDataPopular() {
         List<Book> books = jdbcTemplate.query("SELECT * FROM books " +
                 "JOIN parameter_books ON books.parameter_id = parameter_books.id" +
                 " WHERE parameter_books.popular = 'X'", (ResultSet rs, int rowNum) -> {
@@ -49,12 +49,10 @@ public class BookRepository {
             return book;
         });
         return new ArrayList<>(books);
-    }
+    }*/
 
     public List<Book> getBooksDataRecommended() {
-        List<Book> books = jdbcTemplate.query("SELECT * FROM books " +
-                "JOIN parameter_books ON books.parameter_id = parameter_books.id" +
-                " WHERE parameter_books.recommended = 'X'", (ResultSet rs, int rowNum) -> {
+        List<Book> books = jdbcTemplate.query("SELECT * FROM books ", (ResultSet rs, int rowNum) -> {
             Book book = new Book();
             book.setId(rs.getInt("id"));
             book.setAuthor(rs.getString("author"));
