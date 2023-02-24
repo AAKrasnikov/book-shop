@@ -10,8 +10,19 @@ http://localhost:8085/h2-console
 
 
 Процесс:
-1)Настроить работу с БД:
-    а)main - сделать выборку используя таблицу author, а из таблицы books убрать автора
+Новинки — файл /books/recent.html +
+Популярное — /books/popular.html +
+Отложенное — /postponed.html
+Авторы — /authors/index.html +
+Книги по жанру — /genres/index.html
+Корзина — /cart.html
+Войти — /signin.html
+Поиск — /search/index.html
+Документы — /documents/index.html
+О компании — /about.html
+Помощь — /faq.html
+Контакты — /contacts.html
+
 
 2)Язык сайта доразобраться как работает, посмотреть почему не переключается на русский
 

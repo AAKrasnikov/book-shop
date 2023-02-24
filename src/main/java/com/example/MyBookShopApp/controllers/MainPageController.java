@@ -27,13 +27,6 @@ public class MainPageController {
 
     @GetMapping("/")
     public String mainPage() {
-/*        model.addAttribute("bookDataNew", bookService.getBooksNew());
-        model.addAttribute("bookDataPopular", bookService.getBooksPopular());
-        model.addAttribute("bookDataRecommended", bookService.getBooksRecommended());
-        model.addAttribute("searchPlaceholder", "new search placeholder");
-        model.addAttribute("serverTime", new SimpleDateFormat("hh:mm:ss").format(new Date()));
-        model.addAttribute("placeholderTextPart2", "SERVER");
-        model.addAttribute("messageTemplate", "searchbar.placeholder2");*/
         return "index";
     }
 }
