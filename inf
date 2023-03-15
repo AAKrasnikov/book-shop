@@ -11,10 +11,10 @@ http://localhost:8085/h2-console
 
 Процесс:
 Поиск — /search/index.html
-Корзина — /cart.html
-Отложенное — /postponed.html
 Книги по жанру — /genres/index.html
 
+Корзина — /cart.html +
+Отложенное — /postponed.html +
 Авторы — /authors/index.html +
 Войти — /signin.html +
 Новинки — файл /books/recent.html +
@@ -33,3 +33,6 @@ http://localhost:8085/h2-console
     WHERE parameter_books.NEW='X';
 
     {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'}
+
+    <header th:replace="~{fragments/common_header_fragment :: head}"></header>
+    <footer th:replace="~{fragments/common_footer_fragment :: footer}"></footer>

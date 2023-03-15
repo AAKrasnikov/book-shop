@@ -1,39 +1,48 @@
-DROP TABLE IF EXISTS books;
-CREATE TABLE  books(
+DROP TABLE IF EXISTS book;
+CREATE TABLE  book(
     id INT AUTO_INCREMENT PRIMARY KEY,
-    author VARCHAR(250) NOT NULL,
-    title VARCHAR(250) NOT NULL,
-    priceOld  VARCHAR(250) DEFAULT NULL,
-    price VARCHAR(250) DEFAULT NULL,
-    parameter_id INT
-);
-
-create table authors (
-    id INT,
-    first_name VARCHAR(50),
-    last_name VARCHAR(50)
-);
-
-/*DROP TABLE IF EXISTS books_author;
-CREATE TABLE books_author(
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    books_id INT,
-    author_id INT
+    pup_date DATE NOT NULL,
+    is_bestseller TINYINT NOT NULL,
+    slug VARCHAR(255) NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    image VARCHAR(255),
+    description TEXT,
+    price INT not null,
+    discount TINYINT NOT NULL DEFAULT 0
 );
 
 DROP TABLE IF EXISTS author;
-CREATE TABLE  author(
+create table author (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(250) NOT NULL,
-    surname VARCHAR(250) NOT NULL,
-    full_name VARCHAR(500) NOT NULL
+    photo VARCHAR(255),
+    slug VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    description TEXT
+);
+
+DROP TABLE IF EXISTS book2author;
+create table book2author (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    book_id INT NOT NULL,
+    author_id INT NOT NULL,
+    sort_index INT NOT NULL DEFAULT 0
 );
 
 
-DROP TABLE IF EXISTS parameter_books;
-CREATE TABLE parameter_books(
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  popular VARCHAR(5),
-  new VARCHAR(5),
-  recommended VARCHAR(5)
-);*/
+/*book_review — отзывы о книгах
+book_review_like — лайки и дизлайки отзывов
+genre — жанры (дерево)
+book2genre — привязка книг к жанрам
+users — пользователь магазина
+user_contact — контакт пользователя
+book2user — привязки книг к юзерам
+book2user_type — типы привязок книг к юзерам
+balance_transaction — транзакции по счетам пользователей
+book_file — файлы книг
+book_file_type — типы файлов книг
+description TEXT — описание типов файлов
+file_download — количество скачиваний книги юзером
+document — документы
+faq — частые вопросы и ответы на них
+message — сообщения в форму обратной связи
+*/
