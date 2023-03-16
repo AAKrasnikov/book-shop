@@ -1,0 +1,13 @@
+insert into book2author (book_id, author_id, sort_index) values (1, 1, 1);
+insert into book2author (book_id, author_id, sort_index) values (2, 2, 2);
+insert into book2author (book_id, author_id, sort_index) values (3, 3, 3);
+insert into book2author (book_id, author_id, sort_index) values (4, 4, 4);
+insert into book2author (book_id, author_id, sort_index) values (6, 5, 5);
+insert into book2author (book_id, author_id, sort_index) values (7, 7, 7);
+insert into book2author (book_id, author_id, sort_index) values (8, 8, 1);
+insert into book2author (book_id, author_id, sort_index) values (9, 9, 1);
+insert into book2author (book_id, author_id, sort_index) values (10, 10, 1);
+insert into book2author (book_id, author_id, sort_index) values (11, 11, 1);
+insert into book2author (book_id, author_id, sort_index) values (12, 12, 1);
+insert into book2author (book_id, author_id) values (13, 13);
+insert into book2author (book_id, author_id) values (14, 14);

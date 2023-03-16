@@ -18,50 +18,46 @@ public class BookRepository {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-/*    public List<Book> getBooksDataNew() {
-        List<Book> books = jdbcTemplate.query(
-                "SELECT * FROM books " +
-                        "JOIN parameter_books ON books.parameter_id = parameter_books.id" +
-                        " WHERE parameter_books.NEW = 'X'", (ResultSet rs, int rowNum) -> {
+    public List<Book> getBooksDataBestseller() {
+        List<Book> books = jdbcTemplate.query("SELECT * FROM book " +
+                        "JOIN book2author ON  book.id = book2author.book_id " +
+                        "JOIN author ON book2author.author_id = author.id " +
+                        "WHERE is_bestseller = 1;",
+                (ResultSet rs, int rowNum) -> {
                     Book book = new Book();
                     book.setId(rs.getInt("id"));
-                    book.setAuthor(rs.getString("author"));
+                    book.setPupDate(rs.getDate("pup_date"));
+                    book.setIsBestseller(rs.getInt("is_bestseller"));
+                    book.setSlug(rs.getString("slug"));
                     book.setTitle(rs.getString("title"));
-                    book.setPriceOld(rs.getString("priceOld"));
-                    book.setPrice(rs.getString("price"));
-                    book.setParameterId(rs.getInt("parameter_id"));
+                    book.setImage(rs.getString("image"));
+                    book.setDescription(rs.getString("description"));
+                    book.setPrice(rs.getInt("price"));
+                    book.setDiscount(rs.getInt("discount"));
+                    book.setAuthorName(rs.getString("name"));
                     return book;
                 });
         return new ArrayList<>(books);
-    }*/
-
-/*    public List<Book> getBooksDataPopular() {
-        List<Book> books = jdbcTemplate.query("SELECT * FROM books " +
-                "JOIN parameter_books ON books.parameter_id = parameter_books.id" +
-                " WHERE parameter_books.popular = 'X'", (ResultSet rs, int rowNum) -> {
-            Book book = new Book();
-            book.setId(rs.getInt("id"));
-            book.setAuthor(rs.getString("author"));
-            book.setTitle(rs.getString("title"));
-            book.setPriceOld(rs.getString("priceOld"));
-            book.setPrice(rs.getString("price"));
-            book.setParameterId(rs.getInt("parameter_id"));
-            return book;
-        });
-        return new ArrayList<>(books);
-    }*/
+    }
 
     public List<Book> getBooksDataRecommended() {
-        List<Book> books = jdbcTemplate.query("SELECT * FROM books ", (ResultSet rs, int rowNum) -> {
-            Book book = new Book();
-            book.setId(rs.getInt("id"));
-            book.setAuthor(rs.getString("author"));
-            book.setTitle(rs.getString("title"));
-            book.setPriceOld(rs.getString("priceOld"));
-            book.setPrice(rs.getString("price"));
-            book.setParameterId(rs.getInt("parameter_id"));
-            return book;
-        });
+        List<Book> books = jdbcTemplate.query("SELECT * FROM book " +
+                        "JOIN book2author ON  book.id = book2author.book_id " +
+                        "JOIN author ON book2author.author_id = author.id;",
+                (ResultSet rs, int rowNum) -> {
+                    Book book = new Book();
+                    book.setId(rs.getInt("id"));
+                    book.setPupDate(rs.getDate("pup_date"));
+                    book.setIsBestseller(rs.getInt("is_bestseller"));
+                    book.setSlug(rs.getString("slug"));
+                    book.setTitle(rs.getString("title"));
+                    book.setImage(rs.getString("image"));
+                    book.setDescription(rs.getString("description"));
+                    book.setPrice(rs.getInt("price"));
+                    book.setDiscount(rs.getInt("discount"));
+                    book.setAuthorName(rs.getString("name"));
+                    return book;
+                });
         return new ArrayList<>(books);
     }
 }

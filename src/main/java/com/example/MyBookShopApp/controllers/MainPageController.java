@@ -25,6 +25,14 @@ public class MainPageController {
         return bookService.getBooksRecommended();
     }
 
+    @ModelAttribute("bestsellerBooks")
+    public List<Book> bestsellerBooks() {
+        return bookService.getBooksBestseller();
+    }
+
+    //Исправить метод с рекомендуемыми
+    //Написать и добавить в модель методы вывод списка книг популярное и новинки
+
     @GetMapping("/")
     public String mainPage() {
         return "index";

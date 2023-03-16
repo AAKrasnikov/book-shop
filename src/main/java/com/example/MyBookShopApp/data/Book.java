@@ -1,32 +1,43 @@
 package com.example.MyBookShopApp.data;
 
 import javax.xml.crypto.Data;
+import java.util.Date;
 
 public class Book {
 
     private Integer id;
-    private Data pup_date;
-    private Integer is_bestseller;
+    private Date pupDate;
+    private Integer isBestseller;
     private String slug;
     private String title;
     private String image;
     private String description;
     private Integer price;
     private Integer discount;
+    private String authorName;
 
     @Override
     public String toString() {
         return "Book{" +
                 "id=" + id +
-                ", pup_date=" + pup_date +
-                ", is_bestseller=" + is_bestseller +
+                ", pupDate=" + pupDate +
+                ", isBestseller=" + isBestseller +
                 ", slug='" + slug + '\'' +
                 ", title='" + title + '\'' +
                 ", image='" + image + '\'' +
                 ", description='" + description + '\'' +
                 ", price=" + price +
                 ", discount=" + discount +
+                ", authorName='" + authorName + '\'' +
                 '}';
+    }
+
+    public String getAuthorName() {
+        return authorName;
+    }
+
+    public void setAuthorName(String authorName) {
+        this.authorName = authorName;
     }
 
     public Integer getId() {
@@ -37,20 +48,20 @@ public class Book {
         this.id = id;
     }
 
-    public Data getPup_date() {
-        return pup_date;
+    public Date getPupDate() {
+        return pupDate;
     }
 
-    public void setPup_date(Data pup_date) {
-        this.pup_date = pup_date;
+    public void setPupDate(Date pupDate) {
+        this.pupDate = pupDate;
     }
 
-    public Integer getIs_bestseller() {
-        return is_bestseller;
+    public Integer getIsBestseller() {
+        return isBestseller;
     }
 
-    public void setIs_bestseller(Integer is_bestseller) {
-        this.is_bestseller = is_bestseller;
+    public void setIsBestseller(Integer isBestseller) {
+        this.isBestseller = isBestseller;
     }
 
     public String getSlug() {

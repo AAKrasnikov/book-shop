@@ -20,6 +20,8 @@ public class AuthorsController {
         this.authorService = authorService;
     }
 
+    //исправить работу метода списка авторов
+
     @ModelAttribute("authorsMap")
     public Map<String, List<Author>> authorsMap() {
         return authorService.getAuthorsMap();

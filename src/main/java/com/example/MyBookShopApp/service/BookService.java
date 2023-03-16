@@ -19,11 +19,11 @@ public class BookService {
 
 /*    public List<Book> getBooksNew() {
         return bookRepository.getBooksDataNew();
-    }
-
-    public List<Book> getBooksPopular() {
-        return bookRepository.getBooksDataPopular();
     }*/
+
+    public List<Book> getBooksBestseller() {
+        return bookRepository.getBooksDataBestseller();
+    }
 
     public List<Book> getBooksRecommended() {
         return bookRepository.getBooksDataRecommended();

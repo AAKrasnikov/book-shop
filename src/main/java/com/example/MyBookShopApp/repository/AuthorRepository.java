@@ -17,31 +17,16 @@ public class AuthorRepository {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-/*    public Map<Object, List<Author>> getAuthorsData() {
+    public Map<String, List<Author>> getAuthorsData() {
         List<Author> authors = jdbcTemplate.query("SELECT * FROM author", (ResultSet rs, int rowNum) -> {
             Author author = new Author();
             author.setId(rs.getInt("id"));
+            author.setPhoto(rs.getString("photo"));
+            author.setSlug(rs.getString("slug"));
             author.setName(rs.getString("name"));
-            author.setSurname(rs.getString("surname"));
-            author.setFullName(rs.getString("full_name"));
+            author.setDescription(rs.getString("description"));
             return author;
         });
-        return authors.stream()
-                .collect(
-                        Collectors.groupingBy(
-                                author -> author.getSurname().charAt(0)));
-    }*/
-
-    public Map<String, List<Author>> getAuthorsData() {
-        List<Author> authors = jdbcTemplate.query("SELECT * FROM authors", (ResultSet rs, int rowNum) -> {
-            Author author = new Author();
-            author.setId(rs.getInt("id"));
-            author.setFirstName(rs.getString("first_name"));
-            author.setLastName(rs.getString("last_name"));
-            return author;
-        });
-        return authors.stream().collect(Collectors.groupingBy((Author a) -> {
-            return a.getLastName().substring(0, 1);
-        }));
+        return authors.stream().collect(Collectors.groupingBy((Author a) -> a.getName().substring(0, 1)));
     }
 }
