@@ -28,11 +28,24 @@ create table book2author (
     sort_index INT NOT NULL DEFAULT 0
 );
 
+DROP TABLE IF EXISTS genre;
+CREATE TABLE genre (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    parent_id INT,
+    slug VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL
+);
+
+DROP TABLE IF EXISTS book2genre;
+CREATE TABLE book2genre (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    book_id INT NOT NULL,
+    genre_id INT NOT NULL
+);
+
 
 /*book_review — отзывы о книгах
 book_review_like — лайки и дизлайки отзывов
-genre — жанры (дерево)
-book2genre — привязка книг к жанрам
 users — пользователь магазина
 user_contact — контакт пользователя
 book2user — привязки книг к юзерам

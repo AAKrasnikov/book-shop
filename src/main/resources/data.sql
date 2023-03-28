@@ -11,3 +11,18 @@ insert into book2author (book_id, author_id, sort_index) values (11, 11, 1);
 insert into book2author (book_id, author_id, sort_index) values (12, 12, 1);
 insert into book2author (book_id, author_id) values (13, 13);
 insert into book2author (book_id, author_id) values (14, 14);
+
+insert into book2genre (book_id, genre_id) values (1, 1);
+insert into book2genre (book_id, genre_id) values (2, 2);
+insert into book2genre (book_id, genre_id) values (3, 3);
+insert into book2genre (book_id, genre_id) values (4, 4);
+insert into book2genre (book_id, genre_id) values (5, 4);
+insert into book2genre (book_id, genre_id) values (6, 6);
+insert into book2genre (book_id, genre_id) values (7, 7);
+insert into book2genre (book_id, genre_id) values (8, 8);
+insert into book2genre (book_id, genre_id) values (9, 9);
+insert into book2genre (book_id, genre_id) values (10, 10);
+insert into book2genre (book_id, genre_id) values (11, 11);
+insert into book2genre (book_id, genre_id) values (12, 12);
+insert into book2genre (book_id, genre_id) values (13, 13);
+insert into book2genre (book_id, genre_id) values (14, 14);
