@@ -36,3 +36,15 @@ http://localhost:8085/h2-console
 
     <header th:replace="~{fragments/common_header_fragment :: head}"></header>
     <footer th:replace="~{fragments/common_footer_fragment :: footer}"></footer>
+
+    SELECT
+        user_id,
+        first_name,
+        last_name,
+        last_update
+    FROM
+        users
+    WHERE
+        last_login > CURDATE() - INTERVAL 1 YEAR
+    ORDER BY
+        last_update ASC

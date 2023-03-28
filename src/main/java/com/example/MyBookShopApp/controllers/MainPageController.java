@@ -20,6 +20,11 @@ public class MainPageController {
         this.bookService = bookService;
     }
 
+    @ModelAttribute("newBooks")
+    public List<Book> newBooks() {
+        return bookService.getBooksNew();
+    }
+
     @ModelAttribute("recommendedBooks")
     public List<Book> recommendedBooks() {
         return bookService.getBooksRecommended();
@@ -29,9 +34,6 @@ public class MainPageController {
     public List<Book> bestsellerBooks() {
         return bookService.getBooksBestseller();
     }
-
-    //Исправить метод с рекомендуемыми
-    //Написать и добавить в модель методы вывод списка книг популярное и новинки
 
     @GetMapping("/")
     public String mainPage() {

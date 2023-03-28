@@ -3,11 +3,11 @@ insert into book (pup_date, is_bestseller, slug, title, image, description, pric
 insert into book (pup_date, is_bestseller, slug, title, image, description, price, discount) values ('2023-01-20', 1, 'slug', 'Visiting The Shadows', 'image', 'description', 190, 0);
 insert into book (pup_date, is_bestseller, slug, title, image, description, price, discount) values ('2023-01-20', 0, 'slug', 'Guarding The River', 'image', 'description', 500, 0);
 insert into book (pup_date, is_bestseller, slug, title, image, description, price, discount) values ('2023-01-20', 1, 'slug', 'Arriving At My Friends', 'image', 'description', 400, 0);
-insert into book (pup_date, is_bestseller, slug, title, image, description, price, discount) values ('2023-01-20', 0, 'slug', 'Invited By The Leaders', 'image', 'description', 200, 50);
+insert into book (pup_date, is_bestseller, slug, title, image, description, price, discount) values ('2023-03-15', 0, 'slug', 'Invited By The Leaders', 'image', 'description', 200, 50);
 insert into book (pup_date, is_bestseller, slug, title, image, description, price, discount) values ('2023-01-20', 1, 'slug', 'Hiding The Light', 'image', 'description', 230, 10);
 insert into book (pup_date, is_bestseller, slug, title, image, description, price, discount) values ('2023-01-20', 0, 'slug', 'Guarding The Country', 'image', 'description', 240, 0);
-insert into book (pup_date, is_bestseller, slug, title, image, description, price, discount) values ('2023-01-20', 1, 'slug', 'Bleeding In My Family', 'image', 'description', 280, 0);
+insert into book (pup_date, is_bestseller, slug, title, image, description, price, discount) values ('2023-03-15', 1, 'slug', 'Bleeding In My Family', 'image', 'description', 280, 0);
 insert into book (pup_date, is_bestseller, slug, title, image, description, price, discount) values ('2023-01-20', 0, 'slug', 'Answering The West', 'image', 'description', 500, 0);
-insert into book (pup_date, is_bestseller, slug, title, image, description, price, discount) values ('2023-01-20', 0, 'slug', 'Crying In The Depths', 'image', 'description', 600, 30);
+insert into book (pup_date, is_bestseller, slug, title, image, description, price, discount) values ('2023-03-15', 0, 'slug', 'Crying In The Depths', 'image', 'description', 600, 30);
 insert into book (pup_date, is_bestseller, slug, title, image, description, price, discount) values ('2023-01-20', 0, 'slug', 'Challenge Of Nightmares', 'image', 'description', 700, 0);
 insert into book (pup_date, is_bestseller, slug, title, image, description, price, discount) values ('2023-01-20', 0, 'slug', 'Deceiving The Future', 'image', 'description', 500, 10);
