@@ -1,7 +1,5 @@
 package com.example.MyBookShopApp.controllers;
-
 import com.example.MyBookShopApp.service.CartService;
-import com.example.MyBookShopApp.service.PostponedService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +17,6 @@ public class CartController {
 
     @ModelAttribute("cart")
     public void cart() {
-
     }
 
     @GetMapping("/cart")

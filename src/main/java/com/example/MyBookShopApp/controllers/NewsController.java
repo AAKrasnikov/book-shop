@@ -1,5 +1,4 @@
 package com.example.MyBookShopApp.controllers;
-
 import com.example.MyBookShopApp.service.NewsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

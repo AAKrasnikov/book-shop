@@ -1,10 +1,8 @@
 package com.example.MyBookShopApp.service;
-
 import com.example.MyBookShopApp.data.Genre;
 import com.example.MyBookShopApp.repository.GenresRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service

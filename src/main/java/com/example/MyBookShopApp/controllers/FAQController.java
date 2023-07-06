@@ -1,6 +1,4 @@
 package com.example.MyBookShopApp.controllers;
-
-import com.example.MyBookShopApp.service.AboutCompanyService;
 import com.example.MyBookShopApp.service.FAQService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

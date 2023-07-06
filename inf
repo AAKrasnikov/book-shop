@@ -3,10 +3,6 @@ http://localhost:8085/
 http://localhost:8085/bookshop/main
 http://localhost:8085/h2-console
 
-Изучение:
-1) jdbcTemplete
-2) Лямда выражения
-3) Почитать о всем что в пакедже Config
 
 
 Процесс:

@@ -1,9 +1,7 @@
 package com.example.MyBookShopApp.repository;
-
 import com.example.MyBookShopApp.data.Author;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
-
 import java.sql.ResultSet;
 import java.util.List;
 import java.util.Map;
