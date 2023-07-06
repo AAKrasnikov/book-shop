@@ -17,14 +17,14 @@ public class MainPageController {
         this.bookService = bookService;
     }
 
-    @ModelAttribute("newBooks")
-    public List<Book> newBooks() {
-        return bookService.getBooksNew();
-    }
-
     @ModelAttribute("recommendedBooks")
     public List<Book> recommendedBooks() {
         return bookService.getBooksRecommended();
+    }
+
+    @ModelAttribute("newBooks")
+    public List<Book> newBooks() {
+        return bookService.getBooksNew();
     }
 
     @ModelAttribute("bestsellerBooks")

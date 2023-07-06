@@ -42,20 +42,3 @@ CREATE TABLE book2genre (
     book_id INT NOT NULL,
     genre_id INT NOT NULL
 );
-
-
-/*book_review — отзывы о книгах
-book_review_like — лайки и дизлайки отзывов
-users — пользователь магазина
-user_contact — контакт пользователя
-book2user — привязки книг к юзерам
-book2user_type — типы привязок книг к юзерам
-balance_transaction — транзакции по счетам пользователей
-book_file — файлы книг
-book_file_type — типы файлов книг
-description TEXT — описание типов файлов
-file_download — количество скачиваний книги юзером
-document — документы
-faq — частые вопросы и ответы на них
-message — сообщения в форму обратной связи
-*/
