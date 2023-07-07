@@ -42,3 +42,9 @@ CREATE TABLE book2genre (
     book_id INT NOT NULL,
     genre_id INT NOT NULL
 );
+
+DROP TABLE IF EXISTS tags;
+CREATE TABLE tags (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    tag VARCHAR(255) NOT NULL
+);
