@@ -53,7 +53,7 @@
               <div class="Tags" >
                 <div class="Tags-title" th:each = "genre : ${genresList}">
                   <div class="Tag" >
-                    <a href="/genres/slug.html"  th:text="${genre.name}">Детективы
+                    <a href="/genres/slug.html" th:text="${genre.name + ' (' + genre.count + ')'}">Детективы
                       <span class="undefined-amount">(10)</span></a>
                   </div>
                 </div>

@@ -1,4 +1,5 @@
 package com.example.MyBookShopApp.repository;
+
 import com.example.MyBookShopApp.data.Genre;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -19,14 +20,18 @@ public class GenresRepository {
     }
 
     public List<Genre> getGenresListData() {
-        List<Genre> genres = jdbcTemplate.query ("SELECT * FROM genre", (ResultSet rs, int rowNum) -> {
-                    Genre genre = new Genre();
-                    genre.setId(rs.getInt("id"));
-                    genre.setParent_id(rs.getInt("parent_id"));
-                    genre.setSlug(rs.getString("slug"));
-                    genre.setName(rs.getString("name"));
-                    return genre;
-                });
+        List<Genre> genres = jdbcTemplate.query("select  genre.id, parent_id, slug, name, COUNT(genre_id) AS count_id from genre" +
+                " JOIN book2genre ON genre.id = book2genre.genre_id" +
+                " group by genre_id;", (ResultSet rs, int rowNum) -> {
+            Genre genre = new Genre();
+            genre.setId(rs.getInt("id"));
+            genre.setParent_id(rs.getInt("parent_id"));
+            genre.setSlug(rs.getString("slug"));
+            genre.setName(rs.getString("name"));
+            genre.setCount(rs.getInt("count_id"));
+            return genre;
+        });
         return new ArrayList<>(genres);
+
     }
 }

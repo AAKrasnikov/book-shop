@@ -5,6 +5,7 @@ public class Genre {
     private Integer parent_id;
     private String slug;
     private String name;
+    private int count;
 
     @Override
     public String toString() {
@@ -13,7 +14,16 @@ public class Genre {
                 ", parent_id=" + parent_id +
                 ", slug='" + slug + '\'' +
                 ", name='" + name + '\'' +
+                ", count=" + count +
                 '}';
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
 
     public Integer getId() {
@@ -47,6 +57,4 @@ public class Genre {
     public void setName(String name) {
         this.name = name;
     }
-
-
 }
