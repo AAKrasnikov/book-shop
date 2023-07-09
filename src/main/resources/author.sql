@@ -23,3 +23,58 @@ insert into author (photo, slug, name, description) values ('photo', 'slug', 'He
 insert into author (photo, slug, name, description) values ('photo', 'slug', 'Jared Jacobs', 'description');
 insert into author (photo, slug, name, description) values ('photo', 'slug', 'Michael Byrd', 'description');
 insert into author (photo, slug, name, description) values ('photo', 'slug', 'Charles Parker', 'description');
+
+insert into author (photo, slug, name, description) values ('photo', 'slug', 'Adrian Williams', 'description'),
+                                                           ('photo', 'slug', 'Evelyn Carter', 'description'),
+                                                           ('photo', 'slug', 'Oliver Johnson', 'description'),
+                                                           ('photo', 'slug', 'Sophia Robinson', 'description'),
+                                                           ('photo', 'slug', 'William Davis', 'description'),
+                                                           ('photo', 'slug', 'Emma Thompson', 'description'),
+                                                           ('photo', 'slug', 'Henry White', 'description'),
+                                                           ('photo', 'slug', 'Lily Wright', 'description'),
+                                                           ('photo', 'slug', 'Alexander Martin', 'description'),
+                                                           ('photo', 'slug', 'Grace Clark', 'description');
+
+insert into author (photo, slug, name, description) values ('photo', 'slug', 'Adrian Williams', 'description'),
+                                                           ('photo', 'slug', 'Evelyn Carter', 'description'),
+                                                           ('photo', 'slug', 'Oliver Johnson', 'description'),
+                                                           ('photo', 'slug', 'Sophia Robinson', 'description'),
+                                                           ('photo', 'slug', 'William Davis', 'description'),
+                                                           ('photo', 'slug', 'Emma Thompson', 'description'),
+                                                           ('photo', 'slug', 'Henry White', 'description'),
+                                                           ('photo', 'slug', 'Lily Wright', 'description'),
+                                                           ('photo', 'slug', 'Alexander Martin', 'description'),
+                                                           ('photo', 'slug', 'Grace Clark', 'description');
+
+insert into author (photo, slug, name, description) values ('photo', 'slug', 'Adrian Williams', 'description'),
+                                                           ('photo', 'slug', 'Evelyn Carter', 'description'),
+                                                           ('photo', 'slug', 'Oliver Johnson', 'description'),
+                                                           ('photo', 'slug', 'Sophia Robinson', 'description'),
+                                                           ('photo', 'slug', 'William Davis', 'description'),
+                                                           ('photo', 'slug', 'Emma Thompson', 'description'),
+                                                           ('photo', 'slug', 'Henry White', 'description'),
+                                                           ('photo', 'slug', 'Lily Wright', 'description'),
+                                                           ('photo', 'slug', 'Alexander Martin', 'description'),
+                                                           ('photo', 'slug', 'Grace Clark', 'description');
+
+insert into author (photo, slug, name, description) values ('photo', 'slug', 'Adrian Williams', 'description'),
+                                                           ('photo', 'slug', 'Evelyn Carter', 'description'),
+                                                           ('photo', 'slug', 'Oliver Johnson', 'description'),
+                                                           ('photo', 'slug', 'Sophia Robinson', 'description'),
+                                                           ('photo', 'slug', 'William Davis', 'description'),
+                                                           ('photo', 'slug', 'Emma Thompson', 'description'),
+                                                           ('photo', 'slug', 'Henry White', 'description'),
+                                                           ('photo', 'slug', 'Lily Wright', 'description'),
+                                                           ('photo', 'slug', 'Alexander Martin', 'description'),
+                                                           ('photo', 'slug', 'Grace Clark', 'description');
+
+insert into author (photo, slug, name, description) values ('photo', 'slug', 'Adrian Williams', 'description'),
+                                                           ('photo', 'slug', 'Evelyn Carter', 'description'),
+                                                           ('photo', 'slug', 'Oliver Johnson', 'description'),
+                                                           ('photo', 'slug', 'Sophia Robinson', 'description'),
+                                                           ('photo', 'slug', 'William Davis', 'description'),
+                                                           ('photo', 'slug', 'Emma Thompson', 'description'),
+                                                           ('photo', 'slug', 'Henry White', 'description'),
+                                                           ('photo', 'slug', 'Lily Wright', 'description'),
+                                                           ('photo', 'slug', 'Alexander Martin', 'description'),
+                                                           ('photo', 'slug', 'Grace Clark', 'description');
