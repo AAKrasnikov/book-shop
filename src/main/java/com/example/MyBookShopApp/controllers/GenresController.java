@@ -18,7 +18,7 @@ public class GenresController {
 
     @ModelAttribute("genresList")
     public List<Genre> getGenres() {
-        return genresService.getGenresList();
+        return genresService.getGenresListWithChild();
     }
 
 

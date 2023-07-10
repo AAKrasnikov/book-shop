@@ -1,8 +1,11 @@
 package com.example.MyBookShopApp.data;
 
+import java.util.List;
+
 public class Genre {
     private Integer id;
     private Integer parent_id;
+    private List<Genre> child_id;
     private String slug;
     private String name;
     private int count;
@@ -12,18 +15,11 @@ public class Genre {
         return "Genre{" +
                 "id=" + id +
                 ", parent_id=" + parent_id +
+                ", child_id=" + child_id +
                 ", slug='" + slug + '\'' +
                 ", name='" + name + '\'' +
                 ", count=" + count +
                 '}';
-    }
-
-    public int getCount() {
-        return count;
-    }
-
-    public void setCount(int count) {
-        this.count = count;
     }
 
     public Integer getId() {
@@ -42,6 +38,14 @@ public class Genre {
         this.parent_id = parent_id;
     }
 
+    public List<Genre> getChild_id() {
+        return child_id;
+    }
+
+    public void setChild_id(List<Genre> child_id) {
+        this.child_id = child_id;
+    }
+
     public String getSlug() {
         return slug;
     }
@@ -56,5 +60,13 @@ public class Genre {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
 }
